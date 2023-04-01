@@ -8,11 +8,12 @@ const Header = () => {
   return (
    <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-         <Navbar.Brand as={Link} to="/" >React-Bootstrap</Navbar.Brand>
+         <Navbar.Brand as={Link} to="/" >LOGO</Navbar.Brand>
          <Navbar.Toggle aria-controls="navbar-nav" />
          <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
-               <Nav.Link as={Link} to="/about" >About</Nav.Link>  
+               <Nav.Link as={Link} to="/" >HOME</Nav.Link>
+               <Nav.Link as={Link} to="/pokemon" >POKEMON</Nav.Link>
             </Nav>
          </Navbar.Collapse>
       </Container>
