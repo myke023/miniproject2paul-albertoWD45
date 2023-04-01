@@ -1,10 +1,11 @@
-import React from 'react'
-import Hero from './Hero'
+import Hero from './Hero.jsx'
+import PokemonList from './PokemonList.jsx'
 
 const Pokemon = () => {
   return (
     <>
-      <Hero />
+      <Hero/>
+      <PokemonList />
     </>
   )
 }
