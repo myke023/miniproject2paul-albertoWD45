@@ -12,3 +12,12 @@ body{
    background-position: center;
    background-size: cover;
 }
+.form{
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+.search-box{
+   padding: 0.382rem 1rem;
+   width: 100%;
+}

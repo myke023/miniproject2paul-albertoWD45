@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Hero = () => {
   return (
     <section className="poke-hero d-flex justify-content-center align-items-center">
