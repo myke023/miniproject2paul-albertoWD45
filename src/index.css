@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+   background: #e6e6e9;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.poke-hero{
+   height: 60vh;
+   width: 100%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)), url(./assets/pokeBanner.jpg);
+   background-position: center;
+   background-size: cover;
+}
