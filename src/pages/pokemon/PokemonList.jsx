@@ -1,137 +1,121 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { Container, Button, DropdownButton, Dropdown, ButtonGroup, Row, Col, Card, Spinner } from "react-bootstrap"
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 const PokemonList = () => {
-   const [mainUrl, setMainUrl] = useState("https://pokeapi.co/api/v2/pokemon");
-   const [pokemonList, setPokemonList] = useState([]);
-   const [loading, setLoading] = useState(true);
-   const [offset, setOffset] = useState(0);
-   const [limit, setLimit] = useState(18);
-   const [searchTerm, setSearchTerm] = useState("");
-   const [searchResults, setSearchResults] = useState([]);
-   const [sortOrder, setSortOrder] = useState("default");
- 
-   useEffect(() => {
-     setLoading(true);
- 
-     const fetchData = async () => {
-       const { data } = await axios.get(`${mainUrl}?offset=${offset}&limit=${limit}`);
- 
-       const pokemonListData = await Promise.all(data.results.map(async (pokemon) => {
-         const pokemonDetailsResponse = await axios.get(pokemon.url);
-         return {
-           name: pokemon.name,
-           image: pokemonDetailsResponse.data.sprites.other.dream_world.front_default
-         };
- 
-       }));
-       setPokemonList(pokemonListData);
-       setLoading(false);
-     };
- 
-     fetchData();
-   }, [mainUrl, offset, limit]);
- 
-   useEffect(() => {
-     const fetchSearchResults = async () => {
-       if (searchTerm) {
-         setLoading(true);
-         const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`);
-         setSearchResults([
-           {
-             name: data.name,
-             image: data.sprites.other.dream_world.front_default
-           }
-         ]);
-         setLoading(false);
-       } else {
-         setSearchResults(pokemonList);
-       }
-     };
- 
-     fetchSearchResults();
-   }, [searchTerm, pokemonList]);
- 
-   const handlePrevClick = () => {
-     setOffset(Math.max(offset - limit, 0));
-   };
- 
-   const handleNextClick = () => {
-     setOffset(offset + limit);
-   };
- 
-   const handleSearchChange = event => {
-     setSearchTerm(event.target.value);
-   };
- 
-   const handleSortChange = event => {
-      const sortedList = [...searchResults]; 
-      if (event.target.value === "alphabetical") {
-        sortedList.sort((a, b) => a.name.localeCompare(b.name));
-      }
-      setSearchResults(sortedList);
-      setSortOrder(event.target.value);
-    };
- 
-   const handleClick = (name, image) => {
-     console.log(`You clicked on ${name}`);
-   };
- 
+  const baseUrl = "https://pokeapi.co/api/v2/pokemon"
 
+  const [searchTerm, setSearchTerm] = useState("")
+  const [currentPage, setCurrentPage] = useState(1)
+  const [pokemonList, setPokemonList] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [sortingOrder, setSortingOrder] = useState("default")
+  const [limit, setLimit] = useState(18)
+
+  // Calculate offset based on current page
+  const offset = (currentPage - 1) * limit
+
+  // Fetch data from API
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      const response = await axios.get(`${baseUrl}?limit=1281`)
+      const results = response.data.results
+  
+      const pokemonPromises = results.map(async (result) => {
+        const pokemonResponse = await axios.get(result.url)
+        return pokemonResponse.data;
+      });
+  
+      const pokemon = await Promise.all(pokemonPromises)
+      setPokemonList(pokemon)
+      setIsLoading(false);
+    };
+  
+    fetchData()
+  }, [])
+  
+  // Filter and sort pokemon list
+  const filteredPokemon = pokemonList.filter((pokemon) => pokemon.name.includes(searchTerm.toLowerCase()))
+  let sortedPokemon = [...filteredPokemon];
+  if (sortingOrder === "a-z") {
+    sortedPokemon = filteredPokemon.sort((a, b) => a.name.localeCompare(b.name))
+  }
+  
+  // Calculate total number of pages
+  const totalPages = Math.ceil(filteredPokemon.length / limit)
+  
+  // Calculate current offset based on current page
+  const currentOffset = (currentPage - 1) * limit
+  
+  // Slice the filtered and sorted pokemon list based on the current page and limit
+  const slicedPokemon = sortedPokemon.slice(currentOffset, currentOffset + limit)
+  
   return (
-   <>
-   <Container className="mt-3">
-     <Row>
-       <Col>
-         <Form.Control
-           type="text"
-           placeholder="Search Pokemon"
-           value={searchTerm}
-           onChange={handleSearchChange}
-         />
-       </Col>
-       <Col>
-            <Form.Control as="select" value={sortOrder} onChange={handleSortChange}>
-              <option value="default">Default</option>
-              <option value="alphabetical">Alphabetical</option>
-            </Form.Control>
-          </Col>
-     </Row>
-   </Container>
-   {loading ? (
-     <div>Loading...</div>
-   ) : (
-     <Container>
-       <Row md={3}>
-         {searchResults.map((pokemon, index) => (
-           <Col key={index} className="my-3 cursor">
-             <Card className="p-3" onClick={() => handleClick(pokemon.name, pokemon.image)}>
-               <Card.Img variant="top" src={pokemon.image} className="pokemon-img" />
-               <Card.Body>
-                 <Card.Title className="text-center text-capitalize">{pokemon.name}</Card.Title>
-               </Card.Body>
-             </Card>
-           </Col>
-         ))}
-       </Row>
-       <Row className="mt-3">
-         <Col className="justify-content-center">
-           <Button variant="primary" onClick={handlePrevClick} disabled={offset === 0}>
-             Prev
-           </Button>
-           <Button variant="primary" onClick={handleNextClick}>
-             Next
-           </Button>
-         </Col>
-       </Row>
+    <section>
+      <Container className=" mt-4 d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+        <div className="mx-auto mb-3 m-md-0 d-flex align-items-center">
+          <label htmlFor="searchInput">Search</label>
+          <input 
+            type="text"
+            placeholder="Search pokemon.."
+            value={searchTerm}
+            onChange={(event) => setSearchTerm(event.target.value)}
+          />
+        </div>
+        <ButtonGroup>
+          <DropdownButton as={ButtonGroup} title="Sort By" id="bg-nested-dropdown">
+            <Dropdown.Item onClick={() => setSortingOrder("default")}>Default</Dropdown.Item>
+            <Dropdown.Item onClick={() => setSortingOrder("a-z")}>A - Z</Dropdown.Item>
+          </DropdownButton>
+          <Button disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>
+            Prev
+          </Button>
+          <Button disabled={currentPage === totalPages} onClick={() => setCurrentPage(currentPage + 1)}>
+            Next
+          </Button>
+        </ButtonGroup>
       </Container>
-      )}
-      </> )}
+      <Container>
+        {isLoading ? (
+          <div className="d-flex justify-content-center align-items-center" style={{ height: "50vh" }}>
+            <Spinner animation="border" role="status">
+              <span className="sr-only"></span>
+            </Spinner>
+          </div>
+        ) : (
+          <>
+            {filteredPokemon.length === 0 ? (
+              <h3 className="text-center  mt-5 fw-bold">No Pokemon found.</h3>
+            ) : (
+              <Row xs={1} sm={2} md={3}>
+                {slicedPokemon.map((pokemon) => (
+                  <Col key={pokemon.id} className="mt-4">
+                    <Card>
+                      <Card.Img variant="top" src={pokemon.sprites.other["official-artwork"].front_default} />
+                      <Card.Body>
+                        <Card.Title>{pokemon.name}</Card.Title>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            )}
+          </>
+        )}
+        <Container className="d-flex justify-content-end my-4">
+          <ButtonGroup>
+            <Button disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)}>
+              Prev
+            </Button>
+            <Button disabled={currentPage === totalPages} onClick={() => setCurrentPage(currentPage + 1)}>
+              Next
+            </Button>
+          </ButtonGroup>
+        </Container>
+      </Container>
+    </section>
+  )
+}
 
 export default PokemonList
