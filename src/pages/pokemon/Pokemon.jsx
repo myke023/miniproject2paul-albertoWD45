@@ -1,10 +1,10 @@
-import Hero from './Hero.jsx'
-import PokemonList from './PokemonList.jsx'
+import Hero from "./components/Hero"
+import PokemonList from "./components/PokemonList"
 
 const Pokemon = () => {
   return (
     <>
-      <Hero/>
+      <Hero />
       <PokemonList />
     </>
   )
