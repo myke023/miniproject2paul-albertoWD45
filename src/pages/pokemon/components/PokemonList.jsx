@@ -1,6 +1,7 @@
 import { Container, Button, DropdownButton, Dropdown, ButtonGroup, Row, Col, Card, Spinner } from "react-bootstrap"
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Link } from 'react-router-dom'
 
 const PokemonList = () => {
   const baseUrl = "https://pokeapi.co/api/v2/pokemon"
@@ -19,7 +20,7 @@ const PokemonList = () => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const response = await axios.get(`${baseUrl}?limit=1281`)
+      const response = await axios.get(`${baseUrl}?limit=450`)
       const results = response.data.results
   
       const pokemonPromises = results.map(async (result) => {
@@ -33,6 +34,7 @@ const PokemonList = () => {
     };
   
     fetchData()
+    return
   }, [])
   
   // Filter and sort pokemon list
@@ -91,12 +93,14 @@ const PokemonList = () => {
               <Row xs={1} sm={2} md={3}>
                 {slicedPokemon.map((pokemon) => (
                   <Col key={pokemon.id} className="mt-4">
-                    <Card>
-                      <Card.Img variant="top" src={pokemon.sprites.other["official-artwork"].front_default} />
-                      <Card.Body>
-                        <Card.Title>{pokemon.name}</Card.Title>
-                      </Card.Body>
-                    </Card>
+                    <Link to={`/pokemon/${pokemon.name}`}>
+                      <Card>
+                        <Card.Img variant="top" src={pokemon.sprites.other["official-artwork"].front_default} />
+                        <Card.Body>
+                          <Card.Title>{pokemon.name}</Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </Link>
                   </Col>
                 ))}
               </Row>
