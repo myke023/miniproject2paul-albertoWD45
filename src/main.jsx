@@ -5,6 +5,11 @@ import App from './App'
 // bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+import './imagecontainer.css'
+import './img.css'
+
+// image container and image custom css
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

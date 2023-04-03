@@ -1,0 +1,227 @@
+ /* if you don't want it to take up the full screen, reduce this number */
+   /* /* max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll; */
+ 
+   .img1{
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover !important;
+    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+    background-image: url(./assets/firstbannerpokemon.jpg);
+    margin-top: 3px;
+   margin-bottom: 3px;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+  .img2{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/t1.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+  
+  background-repeat: no-repeat;
+ }
+ 
+ .img3{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/t2.jpg) ;
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img4{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/t3.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img5{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img6{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img7{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img8{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img9{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img10{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img11{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img12{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img13{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img14{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img15{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img16{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ 
+ .img17{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ .img18{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ .img19{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }
+ .img20{
+   max-width: 100%;
+   overflow: hidden;
+   background-size: cover !important;
+   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
+   background-image: url(./assets/firstbannerpokemon.jpg);
+   margin-top: 3px;
+  margin-bottom: 3px;
+ 
+ }

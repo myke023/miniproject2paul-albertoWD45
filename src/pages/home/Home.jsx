@@ -1,10 +1,16 @@
-import React from 'react'
+import Firsthero from './Firsthero'
+import Secondhero from './Secondhero'
+import Thirdhero from './Thirdhero'
+import Leftscroll from './Leftscroll'
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <>
+    <Leftscroll />
+      <Firsthero />
+      <Secondhero />
+      <Thirdhero />
+    </>
   )
 }
 
