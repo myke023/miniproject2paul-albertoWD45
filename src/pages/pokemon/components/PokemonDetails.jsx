@@ -1,30 +1,30 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { useParams, Link } from "react-router-dom";
+import { useEffect, useState } from "react"
+import axios from "axios"
+import { useParams, Link } from "react-router-dom"
 
 const PokemonDetails = ({ match }) => {
   const [pokemon, setPokemon] = useState(null);
-  let [prevPokemon, setPrevPokemon] = useState(null);
-  let [nextPokemon, setNextPokemon] = useState(null);
-  const { name } =useParams();
+  let [prevPokemon, setPrevPokemon] = useState(null)
+  let [nextPokemon, setNextPokemon] = useState(null)
+  const { name } =useParams()
 
   useEffect(() => {
     const fetchPokemon = async () => {
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
-      setPokemon(response.data);
+      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
+      setPokemon(response.data)
 
       if (response.data.id === 1) {
          setPrevPokemon(null);
        } else {
-         const prevResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon/${response.data.id - 1}`);
+         const prevResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon/${response.data.id - 1}`)
          if (prevResponse.data) {
-           setPrevPokemon(prevResponse.data.name);
+           setPrevPokemon(prevResponse.data.name)
          }
        }
      
-       const nextResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon/${response.data.id + 1}`);
+       const nextResponse = await axios.get(`https://pokeapi.co/api/v2/pokemon/${response.data.id + 1}`)
        if (nextResponse.data) {
-         setNextPokemon(nextResponse.data.name);
+         setNextPokemon(nextResponse.data.name)
        }
     };
 
@@ -56,4 +56,4 @@ const PokemonDetails = ({ match }) => {
   );
 };
 
-export default PokemonDetails;
+export default PokemonDetails
