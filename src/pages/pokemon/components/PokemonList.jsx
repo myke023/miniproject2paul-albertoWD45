@@ -78,7 +78,7 @@ const PokemonList = () => {
         </Row>
         <Container>
           {isLoading ? (
-            <div className="d-flex justify-content-center mt-5">
+            <div className="d-flex justify-content-center align-items-center" style={{height: "20vh"}}>
               <Spinner animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
               </Spinner>

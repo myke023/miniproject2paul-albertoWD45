@@ -6,9 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Header = () => {
   return (
-   <Navbar bg="dark" variant="dark" expand="md" fixed="top">
+   <Navbar expand="md" fixed="top">
       <Container>
-         <Navbar.Brand as={Link} to="/" >LOGO</Navbar.Brand>
+         <Navbar.Brand as={Link} to="/" className="fw-bold">Pōrubāto</Navbar.Brand>
          <Navbar.Toggle aria-controls="navbar-nav" />
          <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>

@@ -6,12 +6,12 @@ const PokemonDetailsPagination = ({ prevPokemon, nextPokemon }) => {
     <div className="d-flex justify-content-between">
       {prevPokemon && (
         <Link to={`/pokemon/${prevPokemon}`}>
-          <Button variant="primary">Prev Pokemon</Button>
+          <Button className="pokemon-btn">Prev Pokemon</Button>
         </Link>
       )}
       {nextPokemon && (
         <Link to={`/pokemon/${nextPokemon}`}>
-          <Button variant="primary">Next Pokemon</Button>
+          <Button className="pokemon-btn">Next Pokemon</Button>
         </Link>
       )}
     </div>
