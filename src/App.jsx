@@ -5,6 +5,8 @@ import Home from './pages/home/Home'
 import Header from './components/header/Header'
 import Pokemon from './pages/pokemon/Pokemon'
 import PokemonDetails from './pages/pokemon/components/PokemonDetails'
+import Footer from './components/footer/Footer'
+
 
 
 const App = () => {
@@ -21,7 +23,7 @@ const App = () => {
         </Routes>
       </main>
       <footer>
-
+        <Footer />
       </footer>
     </>
   )

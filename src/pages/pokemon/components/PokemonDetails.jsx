@@ -1,5 +1,6 @@
 import React from "react"
-import { Col, Container, Row, Spinner } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import { Button, Col, Container, Row, Spinner } from "react-bootstrap"
 import UsePokemonDetails from "../hooks/UsePokemonDetails"
 import PokemonStats from "./pokemonDetails/PokemonStats"
 import PokemonCard from "./pokemonCard/PokemonCard"
@@ -23,15 +24,15 @@ const PokemonDetails = () => {
   }
 
   return (
-    <section className="mt-5 pt-5">
-      <Container>
+    <section className="py-5 my-5 d-flex justify-content-center align-items-center" style={{minHeight: "100vh"}}>
+      <Container className="position-relative">
       <PokemonDetailsPagination prevPokemon={prevPokemon} nextPokemon={nextPokemon} />
         <Row xs={1} lg={2} className="my-3">
-          <Col>
+          <Col className="my-xs-3 my-sm-3 my-lg-0">
             <PokemonCard pokemon={pokemon} />
             <PokemonTypes types={pokemon.types} />    
           </Col>
-          <Col>
+          <Col className="my-3 my-sm-3 my-lg-0">
             <PokemonDescription description={pokemon.enDescription} />
             <Row>
               <Col>
@@ -46,7 +47,9 @@ const PokemonDetails = () => {
         <Row className="my-4">
           <PokemonMoves moves={pokemon.moves}  />
         </Row>
-        <PokemonDetailsPagination prevPokemon={prevPokemon} nextPokemon={nextPokemon} />
+        <Link to="/pokemon" className="d-flex justify-content-end text-dark mt-4">
+          Explore More
+        </Link>
       </Container>
     </section>
   );
