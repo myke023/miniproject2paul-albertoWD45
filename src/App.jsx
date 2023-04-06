@@ -8,6 +8,7 @@ import PokemonDetails from './pages/pokemon/components/PokemonDetails'
 import Footer from './components/footer/Footer'
 
 
+
 const App = () => {
   return (
     <>
