@@ -4,19 +4,19 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Tcg1 from '../../assets/tcg1.jpg'
-import Tcg2 from '../../assets/tcg2.jpg'
-import Tcg3 from '../../assets/tcg3.jpg'
-import Tcg4 from '../../assets/tcg4.jpg'
+import Tcg5 from '../../assets/tcg5.jpg'
+import Tcg6 from '../../assets/tcg6.jpg'
+import Tcg7 from '../../assets/tcg7.jpg'
+import Tcg8 from '../../assets/tcg8.jpg'
 
-const Thirdhero = () => {
+const fourthhero = () => {
   return (
     <Container>
     <div className='span31'><span></span></div> 
       <Row md={4}>
         <Col> 
         <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg1} />
+      <Card.Img variant="top" src={Tcg5} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -29,7 +29,7 @@ const Thirdhero = () => {
         </Col>
         <Col xs={6} className='padding30'>        
         <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg2} />
+      <Card.Img variant="top" src={Tcg6} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -43,7 +43,7 @@ const Thirdhero = () => {
 
         <Col className='padding30'>
         <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg3} />
+      <Card.Img variant="top" src={Tcg7} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -57,7 +57,7 @@ const Thirdhero = () => {
 
        <Col className='padding30'>
         <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg4} />
+      <Card.Img variant="top" src={Tcg8} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -73,17 +73,4 @@ const Thirdhero = () => {
   )
 }
 
-export default Thirdhero
-
-
-
-{/* <section class="boximg1" >    
-<div >
-<h1>
-  The Hero Generator
-</h1>
-  <button>
-    When a hero comes along
-  </button>
-</div>
-</section> */}
+export default fourthhero

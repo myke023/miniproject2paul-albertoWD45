@@ -10,8 +10,8 @@ const firsthero = () => {
 <h1><br /><br />
   HEROES CALLING
 </h1>
-  <button>
-    BATTLE NOW!
+  <button className='btnclr'>
+    Explore Now
   </button>
 </div>
 </section>
