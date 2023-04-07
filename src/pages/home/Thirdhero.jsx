@@ -18,10 +18,9 @@ const Thirdhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg1} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Primal Clash Mega Aggron.
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -31,10 +30,9 @@ const Thirdhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg2} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Primal Clash Mega Gardevoir.
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -45,10 +43,9 @@ const Thirdhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg3} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Primal Clash Primal Kyogre
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -59,7 +56,7 @@ const Thirdhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg4} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
