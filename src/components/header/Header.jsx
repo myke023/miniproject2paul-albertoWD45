@@ -14,6 +14,7 @@ const Header = () => {
             <Nav>
                <Nav.Link as={Link} to="/" >HOME</Nav.Link>
                <Nav.Link as={Link} to="/pokemon" >POKEMON</Nav.Link>
+               <Nav.Link as={Link} to="/items" >ITEMS</Nav.Link>
             </Nav>
          </Navbar.Collapse>
       </Container>
