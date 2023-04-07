@@ -6,6 +6,7 @@ import Header from './components/header/Header'
 import Pokemon from './pages/pokemon/Pokemon'
 import PokemonDetails from './pages/pokemon/components/PokemonDetails'
 import Footer from './components/footer/Footer'
+import Items from './pages/items/Items'
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route  path="/" element={<Home />} />
           <Route  path="/pokemon" element={<Pokemon/>} />
           <Route path="/pokemon/:name" element={<PokemonDetails/>} />
+          <Route path="/items" element= {<Items />} />
         </Routes>
       </main>
       <footer>

@@ -9,7 +9,6 @@ const PokemonMoves = ({ moves }) => {
   };
 
   return (
-    <>
       <Container>
         <h1 className="display-6">Moves</h1>
         <Row xs={2 } sm={3} md={4} lg={5}>
@@ -22,7 +21,6 @@ const PokemonMoves = ({ moves }) => {
           ))}
         </Row>
       </Container>
-    </>
   )
 }
 
