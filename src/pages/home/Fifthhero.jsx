@@ -19,10 +19,9 @@ const fifthhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg9} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Furious Fists Tyrantrum
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -32,10 +31,9 @@ const fifthhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg10} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Furious Fists Hawlucha
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -46,10 +44,9 @@ const fifthhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg11} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Furious Fists Mega Lucario
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
@@ -60,10 +57,9 @@ const fifthhero = () => {
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg12} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Pokémon TCG:</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Furious Fists Mega Heracross
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
