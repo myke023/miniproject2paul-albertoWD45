@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,9 +8,14 @@ import Tcg1 from '../../assets/tcg1.jpg'
 import Tcg2 from '../../assets/tcg2.jpg'
 import Tcg3 from '../../assets/tcg3.jpg'
 import Tcg4 from '../../assets/tcg4.jpg'
+import Modal from 'react-bootstrap/Modal';
 
 const Thirdhero = () => {
+  const [show, setShow] = useState(false);
+  
   return (
+    <>
+    
     <Container>
     <div className='span31'><span></span></div> 
       <Row md={4}>
@@ -22,10 +27,16 @@ const Thirdhero = () => {
         <Card.Text>
         Primal Clash Mega Aggron.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        
+        <Button variant="primary" onClick={() => setShow(true)}>Go somewhere</Button>
+        
+
       </Card.Body>
     </Card>
         </Col>
+
+
+
         <Col xs={6} className='padding30'>        
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Tcg2} />
@@ -66,6 +77,7 @@ const Thirdhero = () => {
        </Col>
       </Row>
     </Container>
+    </>
   )
 }
 
