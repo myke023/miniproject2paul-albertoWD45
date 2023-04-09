@@ -9,7 +9,7 @@ const Secondhero = () => {
 <Container md>
 <Row>
   <Col>
-  <div className='span31'><span> JOIN THE BATTLE OF TRAINERS </span></div>
+  <div className='span31'><span> Become a Trainer </span></div>
   <Carousel fade>
       <Carousel.Item>
         <section class="img2"> 

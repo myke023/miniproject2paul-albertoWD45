@@ -25,7 +25,7 @@ const [tempdata, setTempdata] = useState([]);
                   <h5 class="card-title">{item.title}</h5>
                   <p class="card-text">{item.desc}</p>
                   
-                  <button className="btn btn-primary" onClick={() => getData(item.imgSrc,item.title,item.desc)}>Click me</button>
+                  <button className="btn btn-primary" onClick={() => getData(item.imgSrc,item.title,item.desc)}>View Pokemon</button>
                   </div>
                 </div>
               </div>
