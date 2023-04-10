@@ -55,7 +55,7 @@ const Items = () => {
       <Container>
       {loading ? (
         <div className="d-flex justify-content-center align-items-center" style={{height: "100vh"}}>
-            <Spinner animation="border" role="status">
+            <Spinner animation="border" role="status"  className="text-white">
                 <span className="visually-hidden">Loading...</span>
             </Spinner>
          </div>
