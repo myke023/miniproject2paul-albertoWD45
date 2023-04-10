@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 
 const leftscroll = () => {
   return (
-<Container md>
+<Container>
 <Row>
   <Col>
   <section>

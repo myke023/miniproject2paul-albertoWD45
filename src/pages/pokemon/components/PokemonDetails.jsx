@@ -24,7 +24,7 @@ const PokemonDetails = () => {
   }
 
   return (
-    <section className="pokemon-list text-white py-5 my-5 d-flex justify-content-center align-items-center" style={{minHeight: "100vh"}}>
+    <section className="py-5 my-5 d-flex justify-content-center align-items-center" style={{minHeight: "100vh"}}>
       <Container className="position-relative">
       <PokemonDetailsPagination prevPokemon={prevPokemon} nextPokemon={nextPokemon} />
         <Row xs={1} lg={2} className="my-3">

@@ -6,13 +6,13 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Secondhero = () => {
   return (
-<Container md>
+<Container>
 <Row>
   <Col>
   <div className='span31 margintop-60'><span> Become a Trainer </span></div>
   <Carousel fade>
       <Carousel.Item>
-        <section class="img2"> 
+        <section className="img2"> 
           <div id="boximage">
           </div>
         </section>
@@ -23,7 +23,7 @@ const Secondhero = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <section class="img3"> 
+      <section className="img3"> 
           <div id="boximage">
 
           </div>
@@ -36,7 +36,7 @@ const Secondhero = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <section class="img4"> 
+      <section className="img4"> 
           <div id="boximage">
 
           </div>

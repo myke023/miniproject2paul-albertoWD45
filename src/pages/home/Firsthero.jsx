@@ -3,17 +3,16 @@ import {Link} from 'react-router-dom'
 
 const firsthero = () => {
   return (
-<section class="img1" >    
-<div   id="boximage" >
-<h1><br /><br />
-  HEROES CALLING
-</h1>
-  <Link to='http://localhost:5173/pokemon/kyogre'>
+<section className="img1" >    
+  <h1>
+    HEROES CALLING
+  </h1>
+  <Link to='/pokemon/kyogre'>
   <button type="button" className='btnclr span20'>
     Explore Now
   </button>
   </Link>
-</div>
+
 </section>
   
       
