@@ -1,10 +1,9 @@
 import React from 'react'
-import Img15 from '../../assets/pokeBanner.jpg'
+
 
 const Thirdhero = () => {
   return (
 <section class="position-relative ">
-
 <div class="container text-center position-relative bgcontainer">
 <p className='span13'>LATEST UPDATES </p>
   <div class="row">
@@ -25,14 +24,27 @@ const Thirdhero = () => {
     <div class="col img18 paddingall4" id='box2image'>
     <span className='span13'>3 of 3</span>
     </div>
-    {/* <div id='divblank'></div> */}
+
+    </div>
   </div>
-</div>
 </section>  
   )
 }
 
 export default Thirdhero
+
+
+// import {Link} from 'react-router-dom'
+
+    {/* <div id='divblank'> */}
+    {/* <Link to='http://localhost:5173/pokemon/kyogre'>
+  <button type="button" className='btnclr btnraddii span20'>
+    Be a Trainer
+  </button>
+  </Link> */}
+    {/* </div> */}
+
+
 
 
 

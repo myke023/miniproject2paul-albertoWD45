@@ -9,7 +9,7 @@ const Secondhero = () => {
 <Container md>
 <Row>
   <Col>
-  <div className='span31'><span> Become a Trainer </span></div>
+  <div className='span31 margintop-60'><span> Become a Trainer </span></div>
   <Carousel fade>
       <Carousel.Item>
         <section class="img2"> 
@@ -48,7 +48,7 @@ const Secondhero = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    <div className='span31 marginbot-40'><span> Featured Trading Cards </span></div>
+    
   </Col>
 </Row>
 </Container>

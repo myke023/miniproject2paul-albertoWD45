@@ -185,12 +185,27 @@ footer{
   padding-left: 10px;
 }
 
+.paddingright10{
+  padding-right: 10px;
+}
+
 #marginleft20{
-  margin-left: 20px;
+  margin-left: 30px;
+}
+.marginright20{
+  margin-right: 30px;
 }
 
 .marginbot-40{
   margin-bottom: -40px;
+}
+
+.margintop-40{
+  margin-top: -40px;
+}
+
+.margintop-60{
+  margin-top: -60px;
 }
 
 .span20{
@@ -290,5 +305,9 @@ button {
  button:focus {
    outline: 1px solid #fff;
    outline-offset: -4px;
+ }
+
+ .btnraddii{
+  border-radius: 4rem;
  }
      
