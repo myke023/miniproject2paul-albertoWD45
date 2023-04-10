@@ -11,73 +11,10 @@ import Tcg4 from '../../assets/tcg4.jpg'
 import Modal from 'react-bootstrap/Modal';
 
 const Thirdhero = () => {
-  const [show, setShow] = useState(false);
-  
   return (
-    <>
-    
-    <Container>
-    <div className='span31'><span></span></div> 
-      <Row md={4}>
-        <Col> 
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg1} />
-      <Card.Body>
-        <Card.Title>Pokémon TCG:</Card.Title>
-        <Card.Text>
-        Primal Clash Mega Aggron.
-        </Card.Text>
-        
-        <Button variant="primary" onClick={() => setShow(true)}>Go somewhere</Button>
-        
-
-      </Card.Body>
-    </Card>
-        </Col>
-
-
-
-        <Col xs={6} className='padding30'>        
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg2} />
-      <Card.Body>
-        <Card.Title>Pokémon TCG:</Card.Title>
-        <Card.Text>
-        Primal Clash Mega Gardevoir.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
- </Col>
-
-        <Col className='padding30'>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg3} />
-      <Card.Body>
-        <Card.Title>Pokémon TCG:</Card.Title>
-        <Card.Text>
-        Primal Clash Primal Kyogre
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-       </Col>
-
-       <Col className='padding30'>
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Tcg4} />
-      <Card.Body>
-        <Card.Title>Pokémon TCG:</Card.Title>
-        <Card.Text>
-        Primal Clash Primal Groudon
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-       </Col>
-      </Row>
-    </Container>
-    </>
+ <div>
+  
+ </div>
   )
 }
 
@@ -95,3 +32,70 @@ export default Thirdhero
   </button>
 </div>
 </section> */}
+
+// const [show, setShow] = useState(false);
+
+{/* <>
+    
+<Container>
+<div className='span31'><span></span></div> 
+  <Row md={4}>
+    <Col> 
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={Tcg1} />
+  <Card.Body>
+    <Card.Title>Pokémon TCG:</Card.Title>
+    <Card.Text>
+    Primal Clash Mega Aggron.
+    </Card.Text>
+    
+    <Button variant="primary" onClick={() => setShow(true)}>Go somewhere</Button>
+    
+
+  </Card.Body>
+</Card>
+    </Col>
+
+
+
+    <Col xs={6} className='padding30'>        
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={Tcg2} />
+  <Card.Body>
+    <Card.Title>Pokémon TCG:</Card.Title>
+    <Card.Text>
+    Primal Clash Mega Gardevoir.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+</Col>
+
+    <Col className='padding30'>
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={Tcg3} />
+  <Card.Body>
+    <Card.Title>Pokémon TCG:</Card.Title>
+    <Card.Text>
+    Primal Clash Primal Kyogre
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+   </Col>
+
+   <Col className='padding30'>
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={Tcg4} />
+  <Card.Body>
+    <Card.Title>Pokémon TCG:</Card.Title>
+    <Card.Text>
+    Primal Clash Primal Groudon
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+   </Col>
+  </Row>
+</Container>
+</> */}

@@ -1,7 +1,5 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import {Link} from 'react-router-dom'
 
 const firsthero = () => {
   return (
@@ -10,9 +8,11 @@ const firsthero = () => {
 <h1><br /><br />
   HEROES CALLING
 </h1>
-  <button className='btnclr'>
+  <Link to='http://localhost:5173/pokemon/kyogre'>
+  <button type="button" className='btnclr span20'>
     Explore Now
   </button>
+  </Link>
 </div>
 </section>
   
@@ -39,3 +39,7 @@ export default firsthero
     When a hero comes along
   </button>
 </section> */
+
+// import Container from 'react-bootstrap/Container'
+// import Row from 'react-bootstrap/Row'
+// import Col from 'react-bootstrap/Col'
