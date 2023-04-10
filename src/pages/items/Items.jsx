@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
-import { Spinner, Row, Col, Button, Container } from "react-bootstrap"
+import { Spinner, Table, Button, Container } from "react-bootstrap"
 
 const Items = () => {
   const baseUrl = "https://pokeapi.co/api/v2/"
@@ -11,14 +11,14 @@ const Items = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetchItems(`${baseUrl}item?limit=20`)
+    fetchItems(`${baseUrl}item?limit=18`)
   }, [])
 
   const fetchItems = async (url) => {
     const response = await axios.get(url)
     const itemsData = response.data.results
     const totalCount = response.data.count
-    const totalPages = Math.ceil(totalCount / 20)
+    const totalPages = Math.ceil(totalCount / 18)
 
     const itemsList = await Promise.all(
       itemsData.map(async (item) => {
@@ -38,20 +38,21 @@ const Items = () => {
 
   const handlePrev = () => {
     const prevPage = currentPage - 1
-    fetchItems(`${baseUrl}item?limit=20&offset=${(prevPage - 1) * 20}`)
+    fetchItems(`${baseUrl}item?limit=18&offset=${(prevPage - 1) * 18}`)
     setCurrentPage(prevPage)
     window.scrollTo(0, 0)
   }
 
   const handleNext = () => {
     const nextPage = currentPage + 1
-    fetchItems(`${baseUrl}item?limit=20&offset=${(nextPage - 1) * 20}`)
+    fetchItems(`${baseUrl}item?limit=18&offset=${(nextPage - 1) * 18}`)
     setCurrentPage(nextPage)
     window.scrollTo(0, 0)
   }
 
   return (
-    <Container>
+    <div className="pokemon-list">
+      <Container>
       {loading ? (
         <div className="d-flex justify-content-center align-items-center" style={{height: "100vh"}}>
             <Spinner animation="border" role="status">
@@ -60,17 +61,24 @@ const Items = () => {
          </div>
       ) : (
         <div className="mt-5 py-5 px-2">
-          <Row>
-            {items.map((item, index) => (
-              <Col md={6} lg={4} xl={3} key={index} className="mb-4 py-3 border">
-                <div className="text-center">
-                  <img src={item.image} alt={item.name} width={45} />
-                  <h5 className="mt-3 text-capitalize">{item.name}</h5>
-                  <p>{item.effect}</p>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <Table responsive  bordered>
+            <thead className="text-center items-bg ">
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Effect</th>
+              </tr>
+            </thead>
+            <tbody className="items-bg">
+              {items.map((item, index) => (
+                <tr key={index}>
+                  <td><img src={item.image} alt={item.name} width={30} className="d-block m-auto"/></td>
+                  <td className="text-capitalize text-center" >{item.name}</td>
+                  <td>{item.effect}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
           {totalPages && (
             <div className="d-flex justify-content-center mt-4">
               <Button onClick={handlePrev} disabled={currentPage === 1} className="me-4">Prev</Button>
@@ -80,6 +88,7 @@ const Items = () => {
         </div>
       )}
     </Container>
+    </div>
   )
 }
 

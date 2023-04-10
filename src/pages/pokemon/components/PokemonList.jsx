@@ -55,7 +55,7 @@ const PokemonList = () => {
 
   return (
     <section>
-      <Container className="my-5">
+      <Container className="my-5 py-4">
         <Row xs={1} lg={3} className="align-items-center">
           <Col>
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -79,7 +79,7 @@ const PokemonList = () => {
         <Container>
           {isLoading ? (
             <div className="d-flex justify-content-center align-items-center" style={{height: "20vh"}}>
-              <Spinner animation="border" role="status">
+              <Spinner animation="border" role="status" className="loading ">
                 <span className="visually-hidden">Loading...</span>
               </Spinner>
             </div>
@@ -94,8 +94,8 @@ const PokemonList = () => {
               ))}
             </Row>
           ) : (
-            <div className="d-flex justify-content-center align-items-center" style={{height: "20vh"}}>
-              <h3>No matching Pokemon found</h3>
+            <div className="d-flex justify-content-center align-items-center" style={{height: "40vh"}}>
+              <h3 className="text-white text-center">No matching Pokemon found</h3>
             </div>
           )}
         </Container>
