@@ -3,9 +3,9 @@ import Img15 from '../../assets/pokeBanner.jpg'
 
 const Thirdhero = () => {
   return (
-<section class="bgcontainer position-relative">
+<section class="position-relative ">
 
-<div class="container text-center position-relative">
+<div class="container text-center position-relative bgcontainer">
 <p className='span13'>LATEST UPDATES </p>
   <div class="row">
     <div class="col img14 paddingall4" id='box1image' >
