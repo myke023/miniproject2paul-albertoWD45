@@ -88,7 +88,7 @@ const PokemonList = () => {
               {paginatedList.map((pokemon) => (
                 <Col key={pokemon.id} className="mt-4">
                   <Link to={`/pokemon/${pokemon.name}`} style={linkStyle}>
-                    <PokemonCard pokemon={pokemon} />
+                    <PokemonCard pokemon={pokemon} className="pokemonCard"/>
                   </Link>
                 </Col>
               ))}
