@@ -79,7 +79,7 @@ const PokemonList = () => {
         <Container>
           {isLoading ? (
             <div className="d-flex justify-content-center align-items-center" style={{height: "20vh"}}>
-              <Spinner animation="border" role="status" className="loading ">
+              <Spinner animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
               </Spinner>
             </div>
@@ -95,9 +95,17 @@ const PokemonList = () => {
             </Row>
           ) : (
             <div className="d-flex justify-content-center align-items-center" style={{height: "40vh"}}>
-              <h3 className="text-white text-center">No matching Pokemon found</h3>
+              <h3 className="text-center">No matching Pokemon found</h3>
             </div>
           )}
+        </Container>
+        <Container className="mt-4">
+        <Pagination
+              totalResults={filteredList.length}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+              limit={limit}
+            />
         </Container>
       </Container>
     </section>

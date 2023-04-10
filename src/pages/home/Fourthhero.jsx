@@ -12,7 +12,7 @@ import Tcg8 from '../../assets/tcg8.jpg'
 const fourthhero = () => {
   return (
     <Container>
-    <div className='span31'><span></span></div> 
+    <div className='span31 '><span></span></div> 
       <Row md={4}>
         <Col> 
         <Card style={{ width: '18rem' }}>

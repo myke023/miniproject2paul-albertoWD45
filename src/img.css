@@ -12,6 +12,11 @@
     background-image: url(./assets/firstbannerpokemon.jpg);
     margin-top: 3px;
    margin-bottom: 3px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
  
  }
  

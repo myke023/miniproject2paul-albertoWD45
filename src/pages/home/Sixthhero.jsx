@@ -15,16 +15,16 @@ const [tempdata, setTempdata] = useState([]);
   return (
     <>
     
-    <section className="py-4 py-lg-5 container"> 
-    <div className="row justify-content-center align-item-center"> <div className='span31 margintop-40 marginright20' id='marginleft20'><span> Featured Trading Cards </span></div>
+    <section className="py-4 container"> 
+    <div className="row justify-content-center align-item-center my-5"> <div className='span31 margintop-40 marginright20' id='marginleft20'><span> Featured Trading Cards </span></div>
       {data.cardData.map((item, index)=>{
         return(
-          <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
-          <div class="card p-0 overflow-hidden h-100 shadow">
-              <img src={item.imgSrc} class="card-img-top" key={index}/>
-                <div class="card-body">
-                  <h5 class="card-title">{item.title}</h5>
-                  <p class="card-text">{item.desc}</p>
+          <div key={index} className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
+          <div className="card p-0 overflow-hidden h-100 shadow">
+              <img src={item.imgSrc} className="card-img-top"/>
+                <div className="card-body">
+                  <h5 className="card-title">{item.title}</h5>
+                  <p className="card-text">{item.desc}</p>
                   
                   <button className="btn btn-primary span20" onClick={() => getData(item.imgSrc,item.title,item.desc)}>View Pokemon</button>
                   </div>
