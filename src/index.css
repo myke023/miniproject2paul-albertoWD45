@@ -34,9 +34,7 @@ body{
    width: 100%;
    background: #00000077;
 }
-/* .poke-hero-text{
-  background: #00000060;
-} */
+
 .form{
    position: relative;
    display: flex;
@@ -87,7 +85,12 @@ body{
   left: 0;
   right: 0;
 }
-
+.pokemonCard img{
+  transition: all 200ms ease-in-out;
+}
+.pokemonCard:hover > img{
+  transform: translateY(-5px);
+}
 .chevron-left, .chevron-right{
   z-index: 1;
   position: absolute;
