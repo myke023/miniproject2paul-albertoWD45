@@ -1,20 +1,34 @@
-import React, { useState } from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Tcg1 from '../../assets/tcg1.jpg'
-import Tcg2 from '../../assets/tcg2.jpg'
-import Tcg3 from '../../assets/tcg3.jpg'
-import Tcg4 from '../../assets/tcg4.jpg'
-import Modal from 'react-bootstrap/Modal';
+import React from 'react'
+import Img15 from '../../assets/pokeBanner.jpg'
 
 const Thirdhero = () => {
   return (
- <div>
-  
- </div>
+<section class="bgcontainer position-relative">
+
+<div class="container text-center position-relative">
+<p className='span13'>LATEST UPDATES </p>
+  <div class="row">
+    <div class="col img14 paddingall4" id='box1image' >
+    <span className='span13'>1 of 2</span>
+    </div>
+    <div class="col img15 paddingall4" id='box1image'>
+    <span className='span13'>2 of 2</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col img16 paddingall4" id='box2image'>
+    <span className='span13'>1 of 3</span>
+    </div>
+    <div class="col img17 paddingall4" id='box2image'>
+    <span className='span13'>2 of 3</span>
+    </div>
+    <div class="col img18 paddingall4" id='box2image'>
+    <span className='span13'>3 of 3</span>
+    </div>
+    {/* <div id='divblank'></div> */}
+  </div>
+</div>
+</section>  
   )
 }
 

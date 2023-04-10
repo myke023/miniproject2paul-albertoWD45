@@ -1,9 +1,11 @@
 import Firsthero from './Firsthero'
+import Thirdhero from './Thirdhero'
 import Secondhero from './Secondhero'
-// import Thirdhero from './Thirdhero'
+import Sixthhero from './Sixthhero'
+
 // import Fourthhero from './Fourthhero'
 // import Fifthhero from './Fifthhero'
-import Sixthhero from './Sixthhero'
+
 import Leftscroll from './Leftscroll'
 
 const Home = () => {
@@ -11,11 +13,13 @@ const Home = () => {
     <>
     <Leftscroll />
       <Firsthero />
+      <Thirdhero />
       <Secondhero />
-      {/* <Thirdhero />
-      <Fourthhero />
-      <Fifthhero /> */}
       <Sixthhero />
+      
+      {/* <Fourthhero />
+      <Fifthhero /> */}
+      
     </>
   )
 }

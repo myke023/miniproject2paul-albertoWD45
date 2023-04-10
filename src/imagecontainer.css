@@ -33,9 +33,7 @@
     text-align: center;
     width: 100%;
     height: 880px;
-    margin: 3px;
-
-     
+    margin: 3px; 
   }
  
   #divblank {
@@ -96,3 +94,33 @@
   .btnclr{
     background-color: #E74646;
   }
+
+  .bgcontainer{
+    background-image: linear-gradient(to left, rgb(89, 255, 24), rgb(0, 140, 255));
+
+  }
+
+  #box1image {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 380px;
+    margin: 3px; 
+    border-radius: 4%;
+  }
+
+  #box2image {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 240px;
+    margin: 3px; 
+    border-radius: 4%;
+  }
+

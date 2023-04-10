@@ -181,6 +181,14 @@ footer{
   padding-left: -10px;
 }
 
+.padding10{
+  padding-left: 10px;
+}
+
+#marginleft20{
+  margin-left: 20px;
+}
+
 .marginbot-40{
   margin-bottom: -40px;
 }
@@ -190,6 +198,20 @@ footer{
   opacity: 80%;
   text-shadow: 2px 2px 4px #000000;
   /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+.span13{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-left: 1px;
+  text-shadow: 2px 2px 4px #000000;
+  /* background-image: linear-gradient(to left, rgb(89, 255, 24), rgb(0, 140, 255)); */
 }
 
 
