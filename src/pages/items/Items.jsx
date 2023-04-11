@@ -61,6 +61,12 @@ const Items = () => {
          </div>
       ) : (
         <div className="mt-5 py-5 px-2">
+          {totalPages && (
+            <div className="d-flex justify-content-end my-3">
+              <Button onClick={handlePrev} disabled={currentPage === 1} className="me-4">Prev</Button>
+              <Button onClick={handleNext} disabled={currentPage === totalPages}>Next</Button>
+            </div>
+          )}
           <Table responsive  bordered>
             <thead className="text-center items-bg ">
               <tr>
@@ -80,7 +86,7 @@ const Items = () => {
             </tbody>
           </Table>
           {totalPages && (
-            <div className="d-flex justify-content-center mt-4">
+            <div className="d-flex justify-content-between mt-1">
               <Button onClick={handlePrev} disabled={currentPage === 1} className="me-4">Prev</Button>
               <Button onClick={handleNext} disabled={currentPage === totalPages}>Next</Button>
             </div>

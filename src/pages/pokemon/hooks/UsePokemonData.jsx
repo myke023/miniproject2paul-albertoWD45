@@ -12,7 +12,7 @@ const UsePokemonData = () => {
     const fetchData = async () => {
       setIsLoading(true);
 
-      const response = await axios.get(`${baseUrl}?limit=${limit * 25}`)
+      const response = await axios.get(`${baseUrl}?limit=${limit * 30}`)
       const results = response.data.results
 
       const pokemonPromises = results.map(async (result) => {
@@ -24,7 +24,7 @@ const UsePokemonData = () => {
       setPokemonList(pokemonData);
 
       setIsLoading(false)
-    };
+    }
 
     fetchData();
   }, [])
