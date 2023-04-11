@@ -10,7 +10,7 @@ body{
 }
 .navbar-brand{
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: #fff;
@@ -93,6 +93,7 @@ body{
   position: absolute;
   background: #0000002a;
   border: none;
+  height: 3rem;
 }
 
 .chevron-right{

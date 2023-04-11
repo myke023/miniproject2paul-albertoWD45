@@ -47,7 +47,7 @@ const PokemonList = () => {
       )
     )
   );
-
+ 
   const linkStyle = {
     textDecoration: "none"
   };
@@ -100,12 +100,12 @@ const PokemonList = () => {
           )}
         </Container>
         <Container className="mt-4">
-        <Pagination
-              totalResults={filteredList.length}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-              limit={limit}
-            />
+          <Pagination
+            totalResults={filteredList.length}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            limit={limit}
+          />
         </Container>
       </Container>
     </section>
