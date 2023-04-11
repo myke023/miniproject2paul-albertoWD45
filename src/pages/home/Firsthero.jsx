@@ -1,14 +1,15 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 const firsthero = () => {
   return (
 <section className="img1" >    
 <div className='span28 margintop-60 marginright20' id='marginleft20'><span> HEROES CALLING </span></div>
-  <Link to='/pokemon/kyogre'>
-  <button type="button" className='btnclr span20'>
-    Explore Now
-  </button>
+  <Link to='/pokemon' className="text-decoration-none">
+  <Button className="pokemon-btn">
+    Explore  Now
+  </Button>
   </Link>
 
 </section>

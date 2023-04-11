@@ -8,6 +8,8 @@ import PokemonFilterDropdown from "./dropdownFilter/PokemonFilterDropdown"
 import SearchBar from "./search/SearchBar"
 import UsePokemonData from "../hooks/UsePokemonData"
 
+import Pikachu from "../../../assets/pikachu.png"
+
 const PokemonList = () => {
   const [searchTerm, setSearchTerm] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
@@ -55,59 +57,62 @@ const PokemonList = () => {
 
   return (
     <section>
-      <Container className="my-5 py-4">
-        <Row xs={1} lg={3} className="align-items-center">
-          <Col>
-            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          </Col>
-          <Col className="d-sm-flex justify-content-sm-start d-lg-block mt-md-3 mt-lg-0">
-            <PokemonFilterDropdown
-              allTypes={allTypes}
-              typeFilter={typeFilter}
-              setTypeFilter={setTypeFilter}
-            />
-          </Col>
-          <Col>
+      {isLoading ? (
+        <div className="d-flex justify-content-center align-items-center" style={{height: "40vh"}}>
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        </div>
+      ) : (
+        <Container className="py-5 pokemon-list-list rounded">
+          <Row xs={1} lg={3} className="align-items-center">
+            <Col>
+              <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            </Col>
+            <Col className="d-sm-flex justify-content-sm-start d-lg-block mt-md-3 mt-lg-0">
+              <PokemonFilterDropdown
+                allTypes={allTypes}
+                typeFilter={typeFilter}
+                setTypeFilter={setTypeFilter}
+              />
+            </Col>
+            <Col>
+              <Pagination
+                totalResults={filteredList.length}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                limit={limit}
+              />
+            </Col>
+          </Row>
+          <Container>
+            {filteredList.length ? (
+              <Row xs={1} sm={2} md={3}>
+                {paginatedList.map((pokemon) => (
+                  <Col key={pokemon.id} className="mt-4">
+                    <Link to={`/pokemon/${pokemon.name}`} style={linkStyle}>
+                      <PokemonCard pokemon={pokemon} className="pokemonCard"/>
+                    </Link>
+                  </Col>
+                ))}
+              </Row>
+            ) : (
+              <div className="d-flex justify-content-center flex-column align-items-center" style={{height: "40vh"}}>
+                <h3 className="text-center">No matching Pokemon found</h3>
+                <img src={Pikachu} alt="pikachu"  width={150}/>
+              </div>
+            )}
+          </Container>
+          <Container className="mt-4">
             <Pagination
               totalResults={filteredList.length}
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
               limit={limit}
             />
-          </Col>
-        </Row>
-        <Container>
-          {isLoading ? (
-            <div className="d-flex justify-content-center align-items-center" style={{height: "20vh"}}>
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-              </Spinner>
-            </div>
-          ) : filteredList.length ? (
-            <Row xs={1} sm={2} md={3}>
-              {paginatedList.map((pokemon) => (
-                <Col key={pokemon.id} className="mt-4">
-                  <Link to={`/pokemon/${pokemon.name}`} style={linkStyle}>
-                    <PokemonCard pokemon={pokemon} className="pokemonCard"/>
-                  </Link>
-                </Col>
-              ))}
-            </Row>
-          ) : (
-            <div className="d-flex justify-content-center align-items-center" style={{height: "40vh"}}>
-              <h3 className="text-center">No matching Pokemon found</h3>
-            </div>
-          )}
+          </Container>
         </Container>
-        <Container className="mt-4">
-          <Pagination
-            totalResults={filteredList.length}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-            limit={limit}
-          />
-        </Container>
-      </Container>
+      )}
     </section>
   )
 }

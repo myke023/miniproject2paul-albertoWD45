@@ -12,6 +12,14 @@ body{
   color: #fff;
   font-size: 1.5rem;
 }
+.navbar-toggler{
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: #fff;
 }
@@ -106,6 +114,16 @@ body{
 }
 .items-bg{
   background: #f2f2f2;
+}
+.about-section, .pokemon-details, .pokemon-list-list{
+  background: #fff;
+}
+.about-content{
+  padding: 8rem 1rem;
+}
+.text-content{
+  margin: 4rem 0;
+  padding: 0 1.5rem;
 }
 footer{
   background: #C7C7D8;
@@ -320,26 +338,23 @@ max-width: 100%;
 
 
 /* herro button */
-button {
-   background: #117e8d;
-   transition: ease .25s;
+.pokemon-btn, .dropdown-toggle {
+   transition: all 200ms ease-in-out;
    border-radius: 5px;
-   display: inline-block;
+   display: block;
    border: none;
-   padding: 0.75rem 1.5rem;
+   padding: .5rem 1rem;
    margin: 0;
    text-decoration: none;
    color: #ffffff;
-   font-size: 1.2rem;
+   font-size: 1rem;
    cursor: pointer;
    text-align: center;
    -webkit-appearance: none;
    -moz-appearance: none;
-   background:linear-gradient(to right, rgb(255, 32, 24), rgb(0, 140, 255));
+  
  }
- button:hover {
-  background-image: linear-gradient(to left, rgb(255, 0, 13), rgb(255, 238, 0));
- }
+
  button:focus {
    outline: 1px solid #fff;
    outline-offset: -4px;

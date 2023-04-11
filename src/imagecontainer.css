@@ -101,10 +101,6 @@
     padding: 2px 16px;
   }
 
-  .btnclr{
-    background-color: #E74646;
-  }
-
   .bgcontainer{
     background-image: linear-gradient(to right, rgb(161, 255, 107), rgb(112, 210, 255));
 
