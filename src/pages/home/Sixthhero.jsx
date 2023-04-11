@@ -15,8 +15,8 @@ const [tempdata, setTempdata] = useState([]);
   return (
     <>
     
-    <section className="py-4 container"> 
-    <div className="row justify-content-center align-item-center my-5"> <div className='span31 margintop-40 marginright20' id='marginleft20'><span> Featured Trading Cards </span></div>
+    <section className="py-4 container margintop-40"> 
+    <div className="row justify-content-center align-item-center my-5 "> <div className='span31 margintop-60 marginright20' id='marginleft20'><span> Featured Trading Cards </span></div>
       {data.cardData.map((item, index)=>{
         return(
           <div key={index} className="col-11 col-md-6 col-lg-3 mx-0 mb-4">

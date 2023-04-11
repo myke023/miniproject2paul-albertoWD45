@@ -170,6 +170,19 @@ footer{
   background-image: linear-gradient(to left, rgb(89, 255, 24), rgb(0, 140, 255));
 }
 
+.span28{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-left: 1px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 
 .padding30{
   padding-left: 30px;
@@ -202,8 +215,12 @@ footer{
   margin-top: -40px;
 }
 
+.margintop-10{
+  margin-top: 10px;
+}
+
 .margintop-60{
-  margin-top: -60px;
+  margin-top: -65px;
 }
 
 .span20{
