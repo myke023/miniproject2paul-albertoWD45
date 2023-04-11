@@ -5,24 +5,24 @@ const Thirdhero = () => {
   return (
 <section className="position-relative my-5">
 <div className="container text-center position-relative bgcontainer">
-<p className='span13'>LATEST UPDATES </p>
+<p className='span8'>LATEST UPDATES </p>
   <div className="row">
     <div className="latest-update-wrapper col img14 paddingall4" id='box1image' >
-    <span className='span13'>Trainers! Help out Blanche during the A Mystic Hero event!</span>
+    <span className='span8'>Trainers! Help out Blanche during the A Mystic Hero event!</span>
     </div>
     <div className="latest-update-wrapper col img15 paddingall4" id='box1image'>
-    <span className='span13'>Regieleki arrives in Elite Raids!</span>
+    <span className='span8'>Regieleki arrives in Elite Raids!</span>
     </div>
   </div>
   <div className="row">
     <div className="latest-update-wrapper col img16 paddingall4" id='box2image'>
-    <span className='span13'>April Fowl's Day: Pidgey Pandemonium</span>
+    <span className='span8'>April Fowl's Day: Pidgey Pandemonium</span>
     </div>
     <div className="latest-update-wrapper col img17 paddingall4" id='box2image'>
-    <span className='span13'>Spring into Spring with Pokemon adorned with cherry blossoms and more!</span>
+    <span className='span8'>Spring into Spring with Pokemon adorned with cherry blossoms and more!</span>
     </div>
     <div className="latest-update-wrapper col img18 paddingall4" id='box2image'>
-    <span className='span13'>April 2023 Community Day: Togetic</span>
+    <span className='span8'>April 2023 Community Day: Togetic</span>
     </div>
 
     </div>
