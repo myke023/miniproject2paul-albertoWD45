@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const PokemonDetailsPagination = ({ prevPokemon, nextPokemon }) => {
+
   return (
     <Container className="pokemon-details-pagination position-fixed">
       {prevPokemon && (

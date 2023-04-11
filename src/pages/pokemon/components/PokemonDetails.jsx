@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { Button, Col, Container, Row, Spinner } from "react-bootstrap"
+import { Col, Container, Row, Spinner } from "react-bootstrap"
 import UsePokemonDetails from "../hooks/UsePokemonDetails"
 import PokemonStats from "./pokemonDetails/PokemonStats"
 import PokemonCard from "./pokemonCard/PokemonCard"

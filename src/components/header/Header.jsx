@@ -8,7 +8,7 @@ const Header = () => {
   return (
    <Navbar expand="md" fixed="top">
       <Container>
-         <Navbar.Brand as={Link} to="/" className="fw-bold">LOGO</Navbar.Brand>
+         <Navbar.Brand as={Link} to="/" className="fw-bold">PokéWorld</Navbar.Brand>
          <Navbar.Toggle aria-controls="navbar-nav" />
          <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
