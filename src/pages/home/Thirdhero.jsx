@@ -8,21 +8,21 @@ const Thirdhero = () => {
 <p className='span13'>LATEST UPDATES </p>
   <div className="row">
     <div className="latest-update-wrapper col img14 paddingall4" id='box1image' >
-    <span className='span13'>1 of 2</span>
+    <span className='span13'>Trainers! Help out Blanche during the A Mystic Hero event!</span>
     </div>
     <div className="latest-update-wrapper col img15 paddingall4" id='box1image'>
-    <span className='span13'>2 of 2</span>
+    <span className='span13'>Regieleki arrives in Elite Raids!</span>
     </div>
   </div>
   <div className="row">
     <div className="latest-update-wrapper col img16 paddingall4" id='box2image'>
-    <span className='span13'>1 of 3</span>
+    <span className='span13'>April Fowl's Day: Pidgey Pandemonium</span>
     </div>
     <div className="latest-update-wrapper col img17 paddingall4" id='box2image'>
-    <span className='span13'>2 of 3</span>
+    <span className='span13'>Spring into Spring with Pokemon adorned with cherry blossoms and more!</span>
     </div>
     <div className="latest-update-wrapper col img18 paddingall4" id='box2image'>
-    <span className='span13'>3 of 3</span>
+    <span className='span13'>April 2023 Community Day: Togetic</span>
     </div>
 
     </div>
