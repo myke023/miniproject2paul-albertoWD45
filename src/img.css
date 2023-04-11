@@ -1,33 +1,38 @@
  /* if you don't want it to take up the full screen, reduce this number */
    /* /* max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll; */
  
    .img1{
     max-width: 100%;
     overflow: hidden;
-    background-size: cover !important;
     /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
     background-image: url(./assets/firstbannerpokemon.jpg);
+    background-size: cover;
+    background-position: center;
     margin-top: 3px;
-   margin-bottom: 3px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
  
  }
- 
- 
- 
+ @media screen and (max-width: 540px) {
+  .img1 {
+    background-position: 30%;
+  }
+ }
+
  
  
   .img2{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
+   background-position: center;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/t1.jpg);
    margin-top: 3px;
@@ -39,7 +44,8 @@
  .img3{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
+   background-position: center;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/t2.jpg) ;
    margin-top: 3px;
@@ -50,182 +56,199 @@
  .img4{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
+   background-position: center;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/t3.jpg);
    margin-top: 3px;
-  margin-bottom: 3px;
+   margin-bottom: 3px;
+   background-position: center;
  
  }
  
  .img5{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg2.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img6{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg2.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img7{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg3.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img8{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg4.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img9{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg5.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img10{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg6.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img11{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg7.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
- 
+  background-position: center;
  }
  
  .img12{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg8.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img13{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/tcg9.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img14{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/event1.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img15{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/event2.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  }
  
  .img16{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/event3.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  
  .img17{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/event4.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  .img18{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/event5.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  .img19{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/firstbannerpokemon.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
  .img20{
    max-width: 100%;
    overflow: hidden;
-   background-size: cover !important;
+   background-size: cover;
    /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(./assets/firstbannerpokemon.jpg) no-repeat center center scroll;  */
    background-image: url(./assets/firstbannerpokemon.jpg);
    margin-top: 3px;
   margin-bottom: 3px;
+  background-position: center;
  
  }
